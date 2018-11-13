@@ -32,5 +32,6 @@ while read CONC; do grep -v "$CONC" wb_reset/wbphenotype_eq_stripped.owl > wb_re
 
 cp wb_reset/wbphenotype_eq_stripped.owl wbphenotype_eq_do_no_edit.owl
 
-#$ROBOT remove --input wb_reset/wbphenotype_eq.owl --term-file $TF --select "parents equivalents" --select anonymous --output wb_reset/wbphenotype_eq_stripped.owl
+#### CHECK CHECK
+#$ROBOT remove --input wb_reset/wbphenotype_eq.owl --term-file $TF --select "parents equivalents" --select anonymous --output wb_reset/wbphenotype_eq_stripped.owl https://github.com/ontodev/robot/issues/367#issuecomment-427352363
 
