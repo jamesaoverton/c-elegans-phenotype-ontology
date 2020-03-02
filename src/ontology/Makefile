@@ -5,6 +5,20 @@
 # ----------------------------------------
 # <do not edit above this line>
 
+### Workflow
+#
+# TODO: List the Make tasks that authorized DROID users are allow to run
+#
+# - [Build Dashboard](dashboard)
+# - [dashboard](dashboard/dashboard/wbphenotype/dashboard.html)
+# - [dashboard table](dashboard/dashboard/index.html)
+#
+# and the files they're allowed to view.
+
+.PHONY: dashboard
+dashboard:
+	cd ../../dashboard && ONTS=wbphenotype make all
+
 # ----------------------------------------
 # Standard Constants
 # ----------------------------------------
